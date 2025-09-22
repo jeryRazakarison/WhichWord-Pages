@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Help & Support - Which Word</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            border-radius: 15px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #f0f0f0;
+        }
+
+        .header h1 {
+            color: #667eea;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .header p {
+            color: #666;
+            font-size: 1.1em;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .section h2 {
+            color: #667eea;
+            font-size: 1.5em;
+            margin-bottom: 15px;
+            padding-bottom: 5px;
+            border-bottom: 2px solid #667eea;
+        }
+
+        .section h3 {
+            color: #555;
+            font-size: 1.2em;
+            margin: 20px 0 10px 0;
+        }
+
+        .section p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        .section ul {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+
+        .section li {
+            margin-bottom: 8px;
+        }
+
+        .highlight {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+
+        .highlight h3 {
+            color: white;
+            margin-bottom: 10px;
+        }
+
+        .contact-info {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 4px solid #667eea;
+            margin: 20px 0;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 2px solid #f0f0f0;
+            color: #666;
+        }
+
+        .last-updated {
+            background: #e8f4fd;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 20px 0;
+            text-align: center;
+            border-left: 4px solid #667eea;
+        }
+
+        .feature-box {
+            background: #f8f9fa;
+            border: 1px solid #e9ecef;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 15px 0;
+        }
+
+        .feature-box h4 {
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+
+        .step-list {
+            counter-reset: step-counter;
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .step-list li {
+            counter-increment: step-counter;
+            margin-bottom: 15px;
+            padding-left: 40px;
+            position: relative;
+        }
+
+        .step-list li::before {
+            content: counter(step-counter);
+            position: absolute;
+            left: 0;
+            top: 0;
+            background: #667eea;
+            color: white;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 0.9em;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                margin: 10px;
+                padding: 15px;
+            }
+            
+            .header h1 {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>❓ <span style="font-family: 'Courier New', monospace;">Help & Support</span></h1>
+            <p><span style="font-family: 'Courier New', monospace;">Which Word</span> – <span style="font-family: 'Courier New', monospace;">Word Game Helper</span></p>
+        </div>
+
+        <div class="last-updated">
+            <strong>Last updated:</strong> September 22, 2025
+        </div>
+
+        <div class="section">
+            <h2>1. Getting Started</h2>
+            <p>Welcome to <span style="font-family: 'Courier New', monospace;">Which Word</span>! This guide will help you make the most of our assistant for crossword puzzles, scrabble, hangman and more.</p>
+
+            <h3>What is Which Word?</h3>
+            <p><span style="font-family: 'Courier New', monospace;">Which Word</span> is an iOS app that helps you find valid words based on letters you already know or have available – ideal for word games like Scrabble, Boggle, Wordfeud, or crossword puzzles.</p>
+        </div>
+
+        <div class="section">
+            <h2>2. Main Features</h2>
+
+            <div class="feature-box">
+                <h4>🧩 Help for Crossword / Hangman</h4>
+                <ul>
+                    <li>Find words that match a pattern (e.g. `S__P`)</li>
+                    <li>Use `*` for unknown letters</li>
+                    <li>Instant suggestions from a huge dictionary</li>
+                </ul>
+            </div>
+
+            <div class="feature-box">
+                <h4>🎯 Anagram Finder</h4>
+                <ul>
+                    <li>Enter a set of letters to find all valid words</li>
+                    <li>Results sorted by points (Scrabble rules) or alphabetically</li>
+                    <li>Perfect for Scrabble, Boggle, or Wordfeud</li>
+                </ul>
+            </div>
+
+            <div class="feature-box">
+                <h4>📚 Dictionary Lookup</h4>
+                <ul>
+                    <li>Tap on any word to see its definition</li>
+                    <li>Multiple dictionaries available online</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="highlight">
+            <h3>💡 Pro Tips</h3>
+            <ul>
+                <li>Use wildcards like `*` to represent unknown letters</li>
+                <li>Try fewer letters to get more results</li>
+                <li>Tap on any word to look up its meaning</li>
+                <li>Use the sorts to find longer words or higher scoring ones</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>3. Premium Access</h2>
+            <p>Some advanced features are available through in-app purchases:</p>
+            <ul>
+                <li><strong>Full Pattern Search:</strong> Unlimited queries for word patterns</li>
+                <li><strong>Longer Words:</strong> Access to results up to 12 letters</li>
+                <li><strong>High-Scoring Words:</strong> Get suggestions sorted by Scrabble points</li>
+            </ul>
+
+            <h3>Free Daily Usage</h3>
+            <p>Even without a purchase, you can enjoy:</p>
+            <ul>
+                <li>2 free advanced searches per day</li>
+                <li>Unlimited basic anagram usage with few letters</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>4. Privacy & Security</h2>
+            <ul>
+                <li><strong>No Account Needed:</strong> Use the app without creating an account</li>
+                <li><strong>No Tracking:</strong> Your searches are never stored</li>
+                <li><strong>Local Processing:</strong> Calculations are done directly on your device</li>
+                <li><strong>Secure Purchases:</strong> Powered by Apple’s in-app purchase system</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>5. System Requirements</h2>
+            <ul>
+                <li><strong>iOS Version:</strong> iOS 18 or later</li>
+                <li><strong>Devices:</strong> iPhone and iPad</li>
+                <li><strong>Internet:</strong> Required for definition lookup and syncing</li>
+            </ul>
+        </div>
+
+        <div class="contact-info">
+            <h3>📧 Need Help?</h3>
+            <p>If you need further assistance:</p>
+            <ul>
+                <li><strong>Email Support:</strong> <span style="unicode-bidi: bidi-override; direction: rtl;">moc.drongan@tcatnoc</span></li>
+                <li><strong>App:</strong> <span style="font-family: 'Courier New', monospace;">Which Word</span></li>
+                <li><strong>Response Time:</strong> Within 24–48 hours</li>
+            </ul>
+        </div>
+
+        <div class="footer">
+            <p>&copy; 2025 <span style="font-family: 'Courier New', monospace;">Nagord</span>. All rights reserved.</p>
+            <p><span style="font-family: 'Courier New', monospace;">Which Word</span> – Win every word game</p>
+        </div>
+    </div>
+</body>
+</html>
